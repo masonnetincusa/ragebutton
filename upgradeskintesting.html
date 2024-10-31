@@ -79,11 +79,11 @@ gtag('config', 'G-H5JYHWE8FG');
    function clickCounter() {
   if (typeof(Storage) !== "undefined") {
     if (localStorage.clickcount) {
-      localStorage.clickcount = Number(localStorage.clickcount)+1;
+      localStorage.clickcount = Number(localStorage.clickcount)+5000;
     } else {
-      localStorage.clickcount = 5000;
+      localStorage.clickcount = 1;
     }
-    document.getElementById("result").innerHTML = "RAGE: " + localStorage.clickcount +5000 " ";
+    document.getElementById("result").innerHTML = "RAGE: " + localStorage.clickcount + " ";
   } else {
     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
   }
